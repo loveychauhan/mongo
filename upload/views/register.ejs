@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="text-3xl text-center font-bold underline">
+        Hello world!
+    </h1>
+
+    <form class="flex flex-col gap-4 max-w-[480px] mx-auto" action="/register" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input class="border-2 w-full p-2 rounded-[8px]" type="text" name="name" placeholder="enter name">
+        </div>
+
+        <div>
+            <label for="password">Password</label>
+            <input class="border-2 w-full p-2 rounded-[8px]" type="password" name="password" placeholder="******">
+        </div>
+
+
+        <button class=" bg-red-300 px-2 py-1 rounded-[10px]">Register</button>
+    </form>
+</body>
+
+</html>

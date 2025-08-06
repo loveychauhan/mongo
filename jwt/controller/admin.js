@@ -54,7 +54,7 @@ export const regProfile = async (req, res) => {
                 password: hash
             })
         })
-    })
+    })                          
 
 
     res.redirect('/login')

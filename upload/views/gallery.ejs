@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Image Gallery</h1>
+    <button onclick="logout()">Logout</button>
+    <%if(images.length> 0){%>
+        <%images.map((img)=>{%>
+            <div>
+                <img width="250px" src='/upload/<%=img.avatar%>' alt="<%=img.avatar%>">
+            </div>
+            <%})%>
+                <%}else{%>
+                    <h2>no image found</h2>
+                    <%}%>
+
+
+                        <script>
+                            let btn = document.querySelector("button")
+                            const token = localStorage.getItem("token")
+                            if (token) {
+                                fetch('/verify', {
+                                    headers: {
+                                        "Authorization": token
+                                    }
+                                })
+                            } else {
+                                window.location.href = "/login"
+                            }
+                            function logout() {
+                                localStorage.removeItem("token")
+                            }
+                        </script>
+</body>
+
+</html>
