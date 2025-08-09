@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="text-3xl text-center font-bold underline">
+        Register
+    </h1>
+
+    <form class="flex flex-col gap-4 max-w-[480px] mx-auto" enctype="multipart/form-data" action="/register"
+        method="post">
+        <div>
+            <label for="name">Name</label>
+            <input class="border-2 w-full p-2 rounded-[8px]" type="text" name="name" placeholder="enter name">
+        </div>
+
+        <div>
+            <label for="password">password</label>
+            <input class="border-2 w-full p-2 rounded-[8px]" type="password" name="password" placeholder="********">
+        </div>
+
+        <div>
+            <input class="border-2 w-full p-2 rounded-[8px]" type="file" name="avatar">
+        </div>
+
+        <div>
+            <label for="follower">Follower</label>
+            <input class="border-2 w-full p-2 rounded-[8px]" type="text" name="follower" placeholder="1M">
+        </div>
+        <div>
+            <label for="following">Following</label>
+            <input class="border-2 w-full p-2 rounded-[8px]" type="text" name="following" placeholder="150">
+        </div>
+
+        <button class=" bg-red-300 px-2 py-1 rounded-[10px]">Register</button>
+    </form>
+</body>
+
+</html>

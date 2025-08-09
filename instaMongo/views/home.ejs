@@ -8,22 +8,19 @@
 </head>
 
 <body>
-    <nav className="max-w-[768px] mx-auto">
-        <ul className="flex text-blue-500 gap-4 justify-between">
-            <a href="/">
-                <li>Home</li>
-            </a>
-            <a href="/about">
-                <li>About</li>
-            </a>
-            <a href="/login">
-                <li>Login</li>
-            </a>
-            <a href="/register">
-                <li>Register</li>
-            </a>
-        </ul>
-    </nav>
+    <h1 class="text-2xl text-blue-400 max-w-[480px] mx-auto justify-center font-bold flex gap-2  mb-8">
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/registration">Registration</a>
+    </h1>
+    <form action="/gallery" enctype="multipart/form-data" method="post"
+        class="max-w-[480px] mx-auto flex flex-col gap-4">
+        <input class="border-[1px] px-2 py-1 rounded-[4px] " type="file" name="avatar">
+        <input class="border-[1px] px-2 py-1 rounded-[4px] " type="file" name="avatar">
+        <input class="border-[1px] px-2 py-1 rounded-[4px] " type="file" name="avatar">
+        <button class="px-2 py-1 w-full rounded-[10px] bg-green-400 text-white">Upload</button>
+
+    </form>
 
 </body>
 

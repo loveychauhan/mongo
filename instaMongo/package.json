@@ -19,6 +19,7 @@
     "call-bind-apply-helpers": "^1.0.2",
     "call-bound": "^1.0.4",
     "chokidar": "^3.6.0",
+    "cloudinary": "^2.7.0",
     "concat-map": "^0.0.1",
     "content-disposition": "^1.0.0",
     "content-type": "^1.0.5",
@@ -132,7 +133,6 @@
     "whatwg-url": "^14.2.0",
     "wrappy": "^1.0.2"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

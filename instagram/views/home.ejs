@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="text-2xl text-center font-bold ">
+        Home
+    </h1>
+
+    <% if (user) { %>
+        <section>
+            <header class="flex justify-between p-4 flex-wrap">
+                <div class="w-[150px] h-[150px]">
+                    <img class="rounded-full object-fill" width="150px" src="upload/<%= user.avatar %>"
+                        alt="upload/<%= user.avatar %>" />
+                </div>
+
+                <article class="grid items-start">
+                    <div class="flex flex-wrap justify-between items-center gap-2">
+                        <p class="mr-3">
+                            <%= user.name %>
+                        </p>
+                    </div>
+
+                    <div class="flex justify-between gap-2">
+                        <p>0 <span>post</span></p>
+                        <p>
+                            <%= user.follower %> <span>Follower</span>
+                        </p>
+                        <p>
+                            <%= user.following %> <span>Following</span>
+                        </p>
+                    </div>
+
+                    <div class="flex justify-between gap-2">
+                        <p>@<%= user.name %>
+                        </p>
+                    </div>
+                </article>
+            </header>
+
+            <hr />
+        </section>
+        <% } else { %>
+            <h1>No user found</h1>
+            <% } %>
+
+</body>
+
+</html>
