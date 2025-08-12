@@ -98,11 +98,11 @@ Submit a pull request via GitHub and join the journey! 🎉
 ## 📬 Get in Touch
 Have questions, feedback, or ideas? Reach out to Lovey Chauhan:
 
-# Email: loveychauhan68363@gmail.com
+ Email: loveychauhan68363@gmail.com
 
-# LinkedIn: linkedin.com/in/loveychauhan01 
+ LinkedIn: linkedin.com/in/loveychauhan01 
 
-# GitHub: github.com/loveychauhan 
+ GitHub: github.com/loveychauhan 
 
 
 ## 📝 Notes
