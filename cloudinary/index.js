@@ -8,8 +8,8 @@ dotenv.config()
 
 app.use(appRoute)
 cloudinary1();
-const port = process.env.port || 5000
-app.listen(process.env.port, () => {
+const port = 5000
+app.listen(port, () => {
     console.log(`running at ${port}`)
 })
 
