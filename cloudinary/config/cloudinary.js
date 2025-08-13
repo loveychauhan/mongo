@@ -4,9 +4,9 @@ async function cloudinary1() {
 
     // Configuration
     cloudinary.config({
-        cloud_name: 'drv6vorri',
-        api_key: '458278539651463',
-        api_secret: '_UicFdQvO-ajOuWx6dtRPLNLltk' // Click 'View API Keys' above to copy your API secret
+        cloud_name: '********',
+        api_key: '45********63',
+        api_secret: '_UicFd*********NLltk' // Click 'View API Keys' above to copy your API secret
     });
 }
 
