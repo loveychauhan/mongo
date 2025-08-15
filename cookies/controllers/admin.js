@@ -1,16 +1,21 @@
 import userData from "../model/userData.js"
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-
 export const home = (req, res) => {
     const { name } = req.user
     res.render('home', { name })
 }
 
-export const login = (req, res) => {
-    res.render('login')
+const user = {
+    name: 'lovey',
+    job: 'MERN developer',
+
 }
 
+export const login = (req, res) => {
+    req.session.user = user
+    res.render('login')
+}
 
 export const logProfile = async (req, res) => {
     const { name, password } = req.body
@@ -58,5 +63,6 @@ export const regProfile = async (req, res) => {
 
 export const about = (req, res) => {
     const { name } = req.user
+    console.log('about', req.session.user)
     res.render('about', { name })
 }
