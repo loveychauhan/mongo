@@ -12,13 +12,6 @@ Welcome to the **MongoDB Project** repository! This project, hosted at [github.c
 - 💼 **LinkedIn**: [linkedin.com/in/loveychauhan01](https://www.linkedin.com/in/loveychauhan01/)
 - 📧 **Email**: loveychauhan68363@gmail.com
 
-### Tech Stack Lovey Loves:
-- ⚛️ **Next.js** & **React.js**
-- 🟨 **JavaScript**
-- 🎨 **Tailwind CSS**
-- 🔄 **Redux**
-
----
 
 ## 📋 Repository Overview
 
